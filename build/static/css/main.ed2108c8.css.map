@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.ed2108c8.css","mappings":"AAAA,KAII,iBAAkB,CAHlB,iBAAkB,CAClB,SAIJ,CAEA,SALI,WAQJ,CAHA,IACI,WAEJ","sources":["App.css"],"sourcesContent":[".App {\n    text-align: center;\n    width: 60%;\n    height: auto;\n    margin-left: 200px;\n\n}\n\nimg {\n    width: 100px;\n    height: auto;\n}"],"names":[],"sourceRoot":""}
