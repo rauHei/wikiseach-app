@@ -1,4 +1,5 @@
 const express = require("express");
+require('dotenv').config()
 const { wikisearch } = require("./wikisearch");
 
 const cors = require("cors");
@@ -23,6 +24,7 @@ app.get("/wiki", (req, res, next) => {
     });
 });
 
-app.listen(4000, () => {
-    console.log("Server running on port 4000");
+const PORT = process.env.PORT || 4000
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
 });
