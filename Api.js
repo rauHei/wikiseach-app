@@ -11,14 +11,6 @@ app.use(cors());
 
 app.use(express.static('build'))
 
-app.listen(4000, () => {
-    console.log("Server running on port 4000");
-});
-
-// app.get("/hello", (req, res, next) => {
-//     console.log(res);
-//     res.end("Hello world!");
-// });
 
 app.get("/wiki", (req, res, next) => {
     wikisearch(req.query.haku, (error, data) => {
@@ -29,4 +21,8 @@ app.get("/wiki", (req, res, next) => {
 
         }
     });
+});
+
+app.listen(4000, () => {
+    console.log("Server running on port 4000");
 });
